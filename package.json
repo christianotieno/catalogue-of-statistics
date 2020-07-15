@@ -6,9 +6,17 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "eslint-config-airbnb": "18.1.x",
+    "eslint-plugin-import": "2.20.x",
+    "eslint-plugin-jsx-a11y": "6.2.x",
+    "eslint-plugin-react": "7.20.x",
+    "eslint-plugin-react-hooks": "2.5.x",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "stylelint-config-standard": "20.0.x",
+    "stylelint-csstree-validator": "^1.8.0",
+    "stylelint-scss": "3.17.x"
   },
   "scripts": {
     "start": "react-scripts start",
