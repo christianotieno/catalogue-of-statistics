@@ -1,0 +1,65 @@
+$mainColor: #ec4c8a;
+$mainColorDark: #d6457c;
+
+body {
+  background-color: $mainColor;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  color: red;
+  border: 1px solid #000;
+  width: 100vw;
+}
+
+.continentlistContainer {
+  display: grid;
+  grid-template-areas: 
+  'asiaGrid northAmericaGrid'
+  'southAmericaGrid antarcticaGrid'
+  'europeGrid australiaGrid' 
+  ;
+  height: auto;
+}
+
+.asiaGrid {
+  grid-area: asiaGrid;
+}
+
+
+.northAmericaGrid {
+  grid-area: northAmericaGrid;
+}
+
+.southAmericaGrid {
+  grid-area: southAmericaGrid;
+}
+
+.antarcticaGrid {
+  grid-area: antarcticaGrid;
+}
+
+.europeGrid {
+  grid-area: europeGrid;
+}
+
+.australiaGrid {
+  grid-area: australiaGrid;
+}
+
+#allStats {
+  background-color: $mainColorDark;
+  color: #eee;
+}
+#africaContainer {
+  border-bottom: 10px;
+  height: 20vh;
+}
+
+#northAmericaGrid, 
+#southAmericaGrid,
+#australiaGrid {
+  background-color: $mainColorDark;
+}
