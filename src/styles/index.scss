@@ -13,14 +13,11 @@ body {
 
 .continentlistContainer {
   display: grid;
-  align-items: center;
   text-align: center;
   grid-template-areas: 
   'asiaGrid northAmericaGrid'
   'southAmericaGrid antarcticaGrid'
-  'europeGrid australiaGrid' 
-  ;
-  height: 100vh;
+  'europeGrid australiaGrid';
   color: $fontColor;
 }
 
@@ -70,12 +67,14 @@ body {
   background-color: $mainColorDarker;
 }
 
+#statsHeader {
+  text-align: center;
+}
 #statsItems {
   display: flex;
   justify-content: space-evenly;
 }
 .stats {
-  border: 1px solid #000;
   width:70vw;
   margin: 0 auto;
 }

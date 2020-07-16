@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import PropTypes, { array } from 'prop-types';
 import { getContinent } from '../actions/index';
 
 function ContinentList(props) {
@@ -14,7 +14,7 @@ function ContinentList(props) {
         </h2>
       </div>
       <div className="allStats" id="allStats">
-        <h2>All Stats</h2>
+        <h2 id="statsHeader">Official Statistics:</h2>
       </div>
       <div className="stats" id="stats">
         <div id="statsItems">
@@ -51,38 +51,80 @@ function ContinentList(props) {
         </div>
       </div>
       <div className="continentlistContainer">
-        <div className="asiaGrid" id="asiaGrid">
+        <div
+          className="asiaGrid"
+          id="asiaGrid"
+          onClick={() => getContinent}
+          onKeyDown={() => getContinent()}
+          role="button"
+          tabIndex={0}
+        >
           <h2>
             {continents[1]}
             &apos;s Grid
           </h2>
 
         </div>
-        <div className="northAmericaGrid" id="northAmericaGrid">
+        <div
+          className="northAmericaGrid"
+          id="northAmericaGrid"
+          onClick={() => getContinent}
+          onKeyDown={() => getContinent()}
+          role="button"
+          tabIndex={0}
+        >
           <h2>
             {continents[2]}
             &apos;s Grid
           </h2>
         </div>
-        <div className="southAmericaGrid" id="southAmericaGrid">
+        <div
+          className="southAmericaGrid"
+          id="southAmericaGrid"
+          onClick={() => getContinent}
+          onKeyDown={() => getContinent()}
+          role="button"
+          tabIndex={0}
+        >
           <h2>
             {continents[3]}
             &apos;s Grid
           </h2>
         </div>
-        <div className="antarcticaGrid" id="antarcticaGrid">
+        <div
+          className="antarcticaGrid"
+          id="antarcticaGrid"
+          onClick={() => getContinent}
+          onKeyDown={() => getContinent()}
+          role="button"
+          tabIndex={0}
+        >
           <h2>
             {continents[4]}
             &apos;s Grid
           </h2>
         </div>
-        <div className="europeGrid" id="europeGrid">
+        <div
+          className="europeGrid"
+          id="europeGrid"
+          onClick={() => getContinent}
+          onKeyDown={() => getContinent()}
+          role="button"
+          tabIndex={0}
+        >
           <h2>
             {continents[5]}
             &apos;s Grid
           </h2>
         </div>
-        <div className="australiaGrid" id="australiaGrid">
+        <div
+          className="australiaGrid"
+          id="australiaGrid"
+          onClick={() => getContinent}
+          onKeyDown={() => getContinent()}
+          role="button"
+          tabIndex={0}
+        >
           <h2>
             {continents[6]}
             &apos;s Grid
@@ -94,7 +136,7 @@ function ContinentList(props) {
 }
 
 ContinentList.prototype = {
-  continents: PropTypes.array,
+  continents: PropTypes.instanceOf(array).isRequired,
 };
 
 const mapStateToProps = state => ({
