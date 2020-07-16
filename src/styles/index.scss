@@ -15,16 +15,36 @@ body {
   display: grid;
   text-align: center;
   grid-template-areas: 
-  'asiaGrid northAmericaGrid'
-  'southAmericaGrid antarcticaGrid'
-  'europeGrid australiaGrid';
+  'infoGrid asiaGrid'
+  'africaGrid europeGrid'
+  'oceaniaGrid antarcticaGrid'
+  'northAmericaGrid southAmericaGrid';
   color: $fontColor;
+}
+
+.infoGrid {
+  grid-area: infoGrid;
 }
 
 .asiaGrid {
   grid-area: asiaGrid;
 }
 
+.africaGrid {
+  grid-area: africaGrid;
+}
+
+.europeGrid {
+  grid-area: europeGrid;
+}
+
+.oceaniaGrid {
+  grid-area: oceaniaGrid;
+}
+
+.antarcticaGrid {
+  grid-area: antarcticaGrid;
+}
 
 .northAmericaGrid {
   grid-area: northAmericaGrid;
@@ -34,17 +54,6 @@ body {
   grid-area: southAmericaGrid;
 }
 
-.antarcticaGrid {
-  grid-area: antarcticaGrid;
-}
-
-.europeGrid {
-  grid-area: europeGrid;
-}
-
-.australiaGrid {
-  grid-area: australiaGrid;
-}
 
 #allStats {
   background-color: $mainColorDarker;
@@ -55,15 +64,17 @@ body {
   height: 20vh;
 }
 
-#asiaGrid, 
-#antarcticaGrid,
-#europeGrid {
+#infoGrid, 
+#europeGrid,
+#oceaniaGrid,
+#southAmericaGrid {
   background-color: $mainColorDark;
 }
 
-#northAmericaGrid, 
-#southAmericaGrid,
-#australiaGrid {
+#asiaGrid,
+#africaGrid,
+#antarcticaGrid,
+#northAmericaGrid {
   background-color: $mainColorDarker;
 }
 

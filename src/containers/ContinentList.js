@@ -2,17 +2,21 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes, { array } from 'prop-types';
 import { getContinent } from '../actions/index';
+import continentsImages from '../helpers/containers/continentsImages';
 
 function ContinentList(props) {
   const { continents } = props;
   return (
     <div>
-      <div className="africaContainer" id="africaContainer">
+      <div
+        className="statsContainer"
+        id="statsContainer"
+      >
         <h2>
-          {continents[0]}
-          &apos;s container
+          stats container
         </h2>
       </div>
+
       <div className="allStats" id="allStats">
         <h2 id="statsHeader">Official Statistics:</h2>
       </div>
@@ -50,7 +54,21 @@ function ContinentList(props) {
           </p>
         </div>
       </div>
+
       <div className="continentlistContainer">
+        <div
+          className="infoGrid"
+          id="infoGrid"
+          // onClick={() => getContinent}
+          // onKeyDown={() => getContinent()}
+          // role="button"
+          // tabIndex={0}
+        >
+          <h2>
+            General Info
+          </h2>
+        </div>
+
         <div
           className="asiaGrid"
           id="asiaGrid"
@@ -60,14 +78,30 @@ function ContinentList(props) {
           tabIndex={0}
         >
           <h2>
-            {continents[1]}
-            &apos;s Grid
+            {continents[0]}
+            &apos;s numbers
           </h2>
-
+          <img src={continentsImages[0]} alt="africa" className="continent-image" />
         </div>
+
         <div
-          className="northAmericaGrid"
-          id="northAmericaGrid"
+          className="africaGrid"
+          id="africaGrid"
+          onClick={() => getContinent}
+          onKeyDown={() => getContinent()}
+          role="button"
+          tabIndex={0}
+        >
+          <h2>
+            {continents[1]}
+            &apos;s numbers
+          </h2>
+          <img src={continentsImages[1]} alt="africa" className="continent-image" />
+        </div>
+
+        <div
+          className="europeGrid"
+          id="europeGrid"
           onClick={() => getContinent}
           onKeyDown={() => getContinent()}
           role="button"
@@ -75,12 +109,14 @@ function ContinentList(props) {
         >
           <h2>
             {continents[2]}
-            &apos;s Grid
+            &apos;s numbers
           </h2>
+          <img src={continentsImages[2]} alt="africa" className="continent-image" />
         </div>
+
         <div
-          className="southAmericaGrid"
-          id="southAmericaGrid"
+          className="oceaniaGrid"
+          id="oceaniaGrid"
           onClick={() => getContinent}
           onKeyDown={() => getContinent()}
           role="button"
@@ -88,9 +124,11 @@ function ContinentList(props) {
         >
           <h2>
             {continents[3]}
-            &apos;s Grid
+            &apos;s numbers
           </h2>
+          <img src={continentsImages[3]} alt="africa" className="continent-image" />
         </div>
+
         <div
           className="antarcticaGrid"
           id="antarcticaGrid"
@@ -101,12 +139,14 @@ function ContinentList(props) {
         >
           <h2>
             {continents[4]}
-            &apos;s Grid
+            &apos;s numbers
           </h2>
+          <img src={continentsImages[4]} alt="africa" className="continent-image" />
         </div>
+
         <div
-          className="europeGrid"
-          id="europeGrid"
+          className="northAmericaGrid"
+          id="northAmericaGrid"
           onClick={() => getContinent}
           onKeyDown={() => getContinent()}
           role="button"
@@ -114,12 +154,14 @@ function ContinentList(props) {
         >
           <h2>
             {continents[5]}
-            &apos;s Grid
+            &apos;s numbers
           </h2>
+          <img src={continentsImages[5]} alt="africa" className="continent-image" />
         </div>
+
         <div
-          className="australiaGrid"
-          id="australiaGrid"
+          className="southAmericaGrid"
+          id="southAmericaGrid"
           onClick={() => getContinent}
           onKeyDown={() => getContinent()}
           role="button"
@@ -127,9 +169,11 @@ function ContinentList(props) {
         >
           <h2>
             {continents[6]}
-            &apos;s Grid
+            &apos;s numbers
           </h2>
+          <img src={continentsImages[6]} alt="africa" className="continent-image" />
         </div>
+
       </div>
     </div>
   );

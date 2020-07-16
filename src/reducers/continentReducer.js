@@ -1,7 +1,8 @@
 import { GET_CONTINENT } from '../helpers/actions/actions';
+import continents from '../helpers/containers/continents';
 
 const initialState = {
-  continents: ['Africa', 'Asia', 'Antarctica', 'North America', 'South America', 'Europe', 'Oceania'],
+  continents,
 };
 
 const continentReducer = (state = initialState, action) => {
