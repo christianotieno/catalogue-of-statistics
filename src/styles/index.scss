@@ -1,16 +1,13 @@
 $mainColor: #ec4c8a;
-$mainColorDark: #d6457c;
+$mainColorDarker:#d6457c;
+$mainColorDark: #Df4782;
+$fontColor: #f8fefd;
 
 body {
   background-color: $mainColor;
-  text-align: center;
-  display: flex;
-  justify-content: center;
 }
 
 .navbar {
-  color: red;
-  border: 1px solid #000;
   width: 100vw;
 }
 
@@ -22,6 +19,7 @@ body {
   'europeGrid australiaGrid' 
   ;
   height: auto;
+  color: $fontColor;
 }
 
 .asiaGrid {
@@ -50,16 +48,37 @@ body {
 }
 
 #allStats {
-  background-color: $mainColorDark;
-  color: #eee;
+  background-color: $mainColorDarker;
+  color: $fontColor;
 }
 #africaContainer {
   border-bottom: 10px;
   height: 20vh;
 }
 
+#asiaGrid, 
+#antarcticaGrid,
+#europeGrid {
+  background-color: $mainColorDark;
+}
+
 #northAmericaGrid, 
 #southAmericaGrid,
 #australiaGrid {
-  background-color: $mainColorDark;
+  background-color: $mainColorDarker;
+}
+
+#statsItems {
+  display: flex;
+  justify-content: space-evenly;
+}
+.stats {
+  border: 1px solid #000;
+  width:70vw;
+  margin: 0 auto;
+}
+#statsItems p {
+  color: $fontColor;
+  font-weight: bolder;
+  text-align: center;
 }

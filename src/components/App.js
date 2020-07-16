@@ -1,14 +1,14 @@
 import React from 'react';
 import Header from './Header';
 import '../styles/App.scss';
-import CountryList from '../containers/CountryList';
+import ContinentList from '../containers/ContinentList';
 
 function App() {
   return (
     <div className="App">
-      <h2>App Component</h2>
+      <div>Covid 19 stats</div>
       <Header />
-      <CountryList />
+      <ContinentList />
     </div>
   );
 }

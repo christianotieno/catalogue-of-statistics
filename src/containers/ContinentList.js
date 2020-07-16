@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CountryList() {
+function ContinentList() {
   return (
     <div>
       <div className="africaContainer" id="africaContainer">
@@ -10,7 +10,38 @@ function CountryList() {
         <h2>All Stats</h2>
       </div>
       <div className="stats" id="stats">
-        <h2>Stats</h2>
+        <div id="statsItems">
+          <p className="text-fluid">
+            100282
+            <br />
+            New Confirmed
+          </p>
+          <p className="text-fluid">
+            1162857
+            <br />
+            Total Confirmed
+          </p>
+          <p className="text-fluid">
+            5658
+            <br />
+            New Deaths
+          </p>
+          <p className="text-fluid">
+            63263
+            <br />
+            Total Deaths
+          </p>
+          <p className="text-fluid">
+            15405
+            <br />
+            New Recovered
+          </p>
+          <p className="text-fluid">
+            230845
+            <br />
+            Total Recovered
+          </p>
+        </div>
       </div>
       <div className="continentlistContainer">
         <div className="asiaGrid" id="asiaGrid">
@@ -36,4 +67,4 @@ function CountryList() {
   );
 }
 
-export default CountryList;
+export default ContinentList;

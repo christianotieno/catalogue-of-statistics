@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className="header">
       <nav className="navbar navbar-light bg-light">
-        <a className="navbar-brand">
+        <a href="/" className="navbar-brand">
           Covid-19 API
         </a>
         <form className="form-inline">
