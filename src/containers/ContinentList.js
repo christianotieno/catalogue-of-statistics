@@ -1,10 +1,17 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { getContinent } from '../actions/index';
 
-function ContinentList() {
+function ContinentList(props) {
+  const { continents } = props;
   return (
     <div>
       <div className="africaContainer" id="africaContainer">
-        <h2>Africa&apos;s container</h2>
+        <h2>
+          {continents[0]}
+          &apos;s container
+        </h2>
       </div>
       <div className="allStats" id="allStats">
         <h2>All Stats</h2>
@@ -45,26 +52,60 @@ function ContinentList() {
       </div>
       <div className="continentlistContainer">
         <div className="asiaGrid" id="asiaGrid">
-          <h2>Asia&apos;s Grid</h2>
+          <h2>
+            {continents[1]}
+            &apos;s Grid
+          </h2>
+
         </div>
         <div className="northAmericaGrid" id="northAmericaGrid">
-          <h2>North America&apos;s Grid</h2>
+          <h2>
+            {continents[2]}
+            &apos;s Grid
+          </h2>
         </div>
         <div className="southAmericaGrid" id="southAmericaGrid">
-          <h2>South America&apos;s Grid</h2>
+          <h2>
+            {continents[3]}
+            &apos;s Grid
+          </h2>
         </div>
         <div className="antarcticaGrid" id="antarcticaGrid">
-          <h2>Antarctica&apos;s Grid</h2>
+          <h2>
+            {continents[4]}
+            &apos;s Grid
+          </h2>
         </div>
         <div className="europeGrid" id="europeGrid">
-          <h2>Europe&apos;s Grid</h2>
+          <h2>
+            {continents[5]}
+            &apos;s Grid
+          </h2>
         </div>
         <div className="australiaGrid" id="australiaGrid">
-          <h2>Australia&apos;s Grid</h2>
+          <h2>
+            {continents[6]}
+            &apos;s Grid
+          </h2>
         </div>
       </div>
     </div>
   );
 }
 
-export default ContinentList;
+ContinentList.prototype = {
+  continents: PropTypes.array,
+};
+
+const mapStateToProps = state => ({
+  continents: state.continents,
+});
+
+const mapDispatchToProps = dispatch => ({
+  getContinent: () => dispatch(getContinent()),
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(ContinentList);

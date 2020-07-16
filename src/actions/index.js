@@ -1,13 +1,12 @@
-const GET_COUNTRY = 'GET_COUNTRY';
-const COUNTRY_NOT_FOUND = 'COUNTRY_NOT_FOUND';
+import { GET_COUNTRY, GET_CONTINENT } from '../helpers/actions/actions';
 
 const getCountry = country => ({
   type: GET_COUNTRY,
   payload: country,
 });
 
-const countryNotFound = () => ({
-  type: COUNTRY_NOT_FOUND,
+const getContinent = () => ({
+  type: GET_CONTINENT,
 });
 
-export { getCountry, countryNotFound };
+export { getCountry, getContinent };
