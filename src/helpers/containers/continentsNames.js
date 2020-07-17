@@ -5,7 +5,6 @@ const continents = [
   'Africa',
   'Europe',
   'Oceania',
-  'Antarctica',
   'North America',
   'South America'];
 

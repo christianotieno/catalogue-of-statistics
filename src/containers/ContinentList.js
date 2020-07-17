@@ -31,15 +31,6 @@ function ContinentList(props) {
       </div>
       <div className="continentlistContainer">
         <div
-          className="infoGrid"
-          id="infoGrid"
-        >
-          <h2>
-            General Info
-          </h2>
-        </div>
-
-        <div
           className="asiaGrid"
           id="asiaGrid"
           onClick={() => getContinent}
@@ -48,7 +39,7 @@ function ContinentList(props) {
           tabIndex={0}
         >
           <h2>
-            {continents.continents[1]}
+            {continents.continents[0]}
             &apos;s numbers:
           </h2>
           <img
@@ -116,25 +107,6 @@ function ContinentList(props) {
         </div>
 
         <div
-          className="antarcticaGrid"
-          id="antarcticaGrid"
-          onClick={() => getContinent}
-          onKeyDown={() => getContinent()}
-          role="button"
-          tabIndex={0}
-        >
-          <h2>
-            {continents.continents[4]}
-            &apos;s numbers:
-          </h2>
-          <img
-            src={continentsImages[4]}
-            className="continent-image"
-            alt="antarctica"
-          />
-        </div>
-
-        <div
           className="northAmericaGrid"
           id="northAmericaGrid"
           onClick={() => getContinent}
@@ -143,7 +115,7 @@ function ContinentList(props) {
           tabIndex={0}
         >
           <h2>
-            {continents.continents[5]}
+            {continents.continents[4]}
             &apos;s numbers:
           </h2>
           <img
@@ -162,7 +134,7 @@ function ContinentList(props) {
           tabIndex={0}
         >
           <h2>
-            {continents.continents[6]}
+            {continents.continents[5]}
             &apos;s numbers:
           </h2>
           <img

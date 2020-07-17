@@ -4,7 +4,12 @@ import store from '../react-store/store';
 import Header from './Header';
 import '../styles/App.scss';
 import ContinentList from '../containers/ContinentList';
-import Continent from '../containers/africa';
+import Africa from './Africa';
+import Asia from './Asia';
+import NorthAmerica from './NorthAmerica';
+import Europe from './Europe';
+import SouthAmerica from './SouthAmerica';
+import Oceania from './Oceania';
 
 function App() {
   return (
@@ -12,7 +17,12 @@ function App() {
       <div className="App">
         <Header />
         <ContinentList />
-        <Continent />
+        <Africa />
+        <Asia />
+        <Europe />
+        <NorthAmerica />
+        <SouthAmerica />
+        <Oceania />
       </div>
     </Provider>
 

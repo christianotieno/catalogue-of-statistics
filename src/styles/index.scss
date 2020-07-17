@@ -32,16 +32,12 @@ body {
   display: grid;
   text-align: center;
   grid-template-areas: 
-  'infoGrid asiaGrid'
-  'africaGrid europeGrid'
-  'oceaniaGrid antarcticaGrid'
+  'asiaGrid africaGrid' 
+  'europeGrid oceaniaGrid' 
   'northAmericaGrid southAmericaGrid';
   color: $fontColor;
 }
 
-.infoGrid {
-  grid-area: infoGrid;
-}
 
 .asiaGrid {
   grid-area: asiaGrid;
@@ -59,10 +55,6 @@ body {
   grid-area: oceaniaGrid;
 }
 
-.antarcticaGrid {
-  grid-area: antarcticaGrid;
-}
-
 .northAmericaGrid {
   grid-area: northAmericaGrid;
 }
@@ -70,19 +62,15 @@ body {
 .southAmericaGrid {
   grid-area: southAmericaGrid;
 }
-
-
-
-#infoGrid, 
-#europeGrid,
+ 
+#asiaGrid,
 #oceaniaGrid,
-#southAmericaGrid {
+#northAmericaGrid {
   background-color: $mainColorDark;
 }
 
-#asiaGrid,
 #africaGrid,
-#antarcticaGrid,
-#northAmericaGrid {
+#europeGrid,
+#southAmericaGrid {
   background-color: $mainColorDarker;
 }
