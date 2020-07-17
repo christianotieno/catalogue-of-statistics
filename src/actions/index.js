@@ -1,8 +1,7 @@
-import { GET_COUNTRY, GET_CONTINENT } from '../helpers/actions/actions';
+import { GET_CONTINENT_COUNTRIES, GET_CONTINENT } from '../helpers/actions/actions';
 
-const getCountry = country => ({
-  type: GET_COUNTRY,
-  payload: country,
+const getCountry = () => ({
+  type: GET_CONTINENT_COUNTRIES,
 });
 
 const getContinent = () => ({

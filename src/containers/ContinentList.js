@@ -13,56 +13,26 @@ function ContinentList(props) {
         id="statsContainer"
       >
         <h2>
-          stats container
+          <div className="stats" id="stats">
+            <div id="statsItems">
+              <marquee>
+                <p className="text-fluid">
+                  New confirmed: 100282 |
+                  Total confirmed: 1162857 |
+                  New deaths: 5658 |
+                  Total deaths: 63263 |
+                  New recovered: 15405 |
+                  Total recovered: 230845
+                </p>
+              </marquee>
+            </div>
+          </div>
         </h2>
       </div>
-
-      <div className="allStats" id="allStats">
-        <h2 id="statsHeader">Official Statistics:</h2>
-      </div>
-      <div className="stats" id="stats">
-        <div id="statsItems">
-          <p className="text-fluid">
-            100282
-            <br />
-            New Confirmed
-          </p>
-          <p className="text-fluid">
-            1162857
-            <br />
-            Total Confirmed
-          </p>
-          <p className="text-fluid">
-            5658
-            <br />
-            New Deaths
-          </p>
-          <p className="text-fluid">
-            63263
-            <br />
-            Total Deaths
-          </p>
-          <p className="text-fluid">
-            15405
-            <br />
-            New Recovered
-          </p>
-          <p className="text-fluid">
-            230845
-            <br />
-            Total Recovered
-          </p>
-        </div>
-      </div>
-
       <div className="continentlistContainer">
         <div
           className="infoGrid"
           id="infoGrid"
-          // onClick={() => getContinent}
-          // onKeyDown={() => getContinent()}
-          // role="button"
-          // tabIndex={0}
         >
           <h2>
             General Info
@@ -78,10 +48,14 @@ function ContinentList(props) {
           tabIndex={0}
         >
           <h2>
-            {continents[0]}
-            &apos;s numbers
+            {continents.continents[1]}
+            &apos;s numbers:
           </h2>
-          <img src={continentsImages[0]} alt="africa" className="continent-image" />
+          <img
+            src={continentsImages[0]}
+            className="continent-image"
+            alt="asia"
+          />
         </div>
 
         <div
@@ -93,10 +67,14 @@ function ContinentList(props) {
           tabIndex={0}
         >
           <h2>
-            {continents[1]}
-            &apos;s numbers
+            {continents.continents[1]}
+            &apos;s numbers:
           </h2>
-          <img src={continentsImages[1]} alt="africa" className="continent-image" />
+          <img
+            src={continentsImages[1]}
+            className="continent-image"
+            alt="africa"
+          />
         </div>
 
         <div
@@ -108,10 +86,14 @@ function ContinentList(props) {
           tabIndex={0}
         >
           <h2>
-            {continents[2]}
-            &apos;s numbers
+            {continents.continents[2]}
+            &apos;s numbers:
           </h2>
-          <img src={continentsImages[2]} alt="africa" className="continent-image" />
+          <img
+            src={continentsImages[2]}
+            className="continent-image"
+            alt="europe"
+          />
         </div>
 
         <div
@@ -123,10 +105,14 @@ function ContinentList(props) {
           tabIndex={0}
         >
           <h2>
-            {continents[3]}
-            &apos;s numbers
+            {continents.continents[3]}
+            &apos;s numbers:
           </h2>
-          <img src={continentsImages[3]} alt="africa" className="continent-image" />
+          <img
+            src={continentsImages[3]}
+            className="continent-image"
+            alt="oceania"
+          />
         </div>
 
         <div
@@ -138,10 +124,14 @@ function ContinentList(props) {
           tabIndex={0}
         >
           <h2>
-            {continents[4]}
-            &apos;s numbers
+            {continents.continents[4]}
+            &apos;s numbers:
           </h2>
-          <img src={continentsImages[4]} alt="africa" className="continent-image" />
+          <img
+            src={continentsImages[4]}
+            className="continent-image"
+            alt="antarctica"
+          />
         </div>
 
         <div
@@ -153,10 +143,14 @@ function ContinentList(props) {
           tabIndex={0}
         >
           <h2>
-            {continents[5]}
-            &apos;s numbers
+            {continents.continents[5]}
+            &apos;s numbers:
           </h2>
-          <img src={continentsImages[5]} alt="africa" className="continent-image" />
+          <img
+            src={continentsImages[5]}
+            className="continent-image"
+            alt="northAmerica"
+          />
         </div>
 
         <div
@@ -168,10 +162,14 @@ function ContinentList(props) {
           tabIndex={0}
         >
           <h2>
-            {continents[6]}
-            &apos;s numbers
+            {continents.continents[6]}
+            &apos;s numbers:
           </h2>
-          <img src={continentsImages[6]} alt="africa" className="continent-image" />
+          <img
+            src={continentsImages[6]}
+            className="continent-image"
+            alt="southAmerica"
+          />
         </div>
 
       </div>

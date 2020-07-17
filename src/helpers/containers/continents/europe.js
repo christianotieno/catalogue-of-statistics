@@ -1,4 +1,4 @@
-const Europe = {
+const europe = {
   AL: 'Albania',
   AD: 'Andorra',
   AT: 'Austria',
@@ -50,4 +50,4 @@ const Europe = {
   VA: 'Vatican',
 };
 
-export default Europe;
+export default europe;

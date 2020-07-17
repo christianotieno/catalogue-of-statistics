@@ -1,5 +1,5 @@
 import { GET_CONTINENT } from '../helpers/actions/actions';
-import continents from '../helpers/containers/continents';
+import continents from '../helpers/containers/continentsNames';
 
 const initialState = {
   continents,

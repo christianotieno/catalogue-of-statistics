@@ -1,4 +1,4 @@
-const Africa = {
+const africa = {
   DZ: 'Algeria',
   AO: 'Angola',
   BJ: 'Benin',
@@ -57,4 +57,4 @@ const Africa = {
   ZW: 'Zimbabwe',
 };
 
-export default Africa;
+export default africa;

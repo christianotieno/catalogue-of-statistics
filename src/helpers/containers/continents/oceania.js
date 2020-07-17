@@ -1,4 +1,4 @@
-const AustraliaAndOceania = {
+const australiaAndOceania = {
   AS: 'American Samoa',
   AU: 'Australia',
   CK: 'Cook Islands',
@@ -25,4 +25,4 @@ const AustraliaAndOceania = {
   VU: 'Vanuatu',
 };
 
-export default AustraliaAndOceania;
+export default australiaAndOceania;

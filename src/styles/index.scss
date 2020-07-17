@@ -5,10 +5,27 @@ $fontColor: #f8fefd;
 
 body {
   background-color: $mainColor;
+  margin: 0 auto;
+  width: 98vw;
 }
 
+.header {
+  margin-top: 0.5%;
+}
 .navbar {
-  width: 100vw;
+  border-radius: 5px;
+}
+
+#statsItems {
+  background-color: $mainColorDarker;
+  margin-top: 0.5%;
+  padding: 0.4% 0 0;
+}
+
+#statsItems p {
+  color: yellow;
+  font-weight: bolder;
+  text-align: center;
 }
 
 .continentlistContainer {
@@ -55,14 +72,6 @@ body {
 }
 
 
-#allStats {
-  background-color: $mainColorDarker;
-  color: $fontColor;
-}
-#africaContainer {
-  border-bottom: 10px;
-  height: 20vh;
-}
 
 #infoGrid, 
 #europeGrid,
@@ -76,21 +85,4 @@ body {
 #antarcticaGrid,
 #northAmericaGrid {
   background-color: $mainColorDarker;
-}
-
-#statsHeader {
-  text-align: center;
-}
-#statsItems {
-  display: flex;
-  justify-content: space-evenly;
-}
-.stats {
-  width:70vw;
-  margin: 0 auto;
-}
-#statsItems p {
-  color: $fontColor;
-  font-weight: bolder;
-  text-align: center;
 }

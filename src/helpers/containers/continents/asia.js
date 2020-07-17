@@ -1,4 +1,4 @@
-const Asia = {
+const asia = {
   AF: 'Afghanistan',
   AM: 'Armenia',
   AZ: 'Azerbaijan',
@@ -49,4 +49,4 @@ const Asia = {
   YE: 'Yemen',
 };
 
-export default Asia;
+export default asia;
