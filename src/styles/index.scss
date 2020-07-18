@@ -3,14 +3,33 @@ $mainColorDarker:#d6457c;
 $mainColorDark: #Df4782;
 $fontColor: #f8fefd;
 
-body {
-  background-color: $mainColor;
-  margin: 0 auto;
-  width: 98vw;
+.root {
+  height: 100vh;
 }
 
-.header {
-  margin-top: 0.5%;
+body {
+  background-color: $mainColor;
+}
+
+h2 {
+  color: $fontColor;
+}
+
+.darker-backround {
+  background-color: $mainColorDarker;
+}
+
+.dark-backround {
+  background-color: $mainColorDark;
+}
+
+p {
+  text-align: center;
+}
+
+.header, 
+.row {
+  margin: 0.5% 0;
 }
 .navbar {
   border-radius: 5px;
@@ -24,60 +43,18 @@ body {
 
 #statsItems p {
   color: yellow;
-  font-weight: bolder;
-  text-align: center;
 }
 
-.continentlistContainer {
-  display: grid;
-  text-align: center;
-  grid-template-areas: 
-  'asiaGrid africaGrid' 
-  'europeGrid oceaniaGrid' 
-  'northAmericaGrid southAmericaGrid';
-  color: $fontColor;
-}
-
-
-.asiaGrid {
-  grid-area: asiaGrid;
-}
-
-.africaGrid {
-  grid-area: africaGrid;
-}
-
-.europeGrid {
-  grid-area: europeGrid;
-}
-
-.oceaniaGrid {
-  grid-area: oceaniaGrid;
-}
-
-.northAmericaGrid {
-  grid-area: northAmericaGrid;
-}
-
-.southAmericaGrid {
-  grid-area: southAmericaGrid;
-}
- 
-#asiaGrid,
-#oceaniaGrid,
-#northAmericaGrid {
-  background-color: $mainColorDark;
-}
-
-#africaGrid,
-#europeGrid,
-#southAmericaGrid {
-  background-color: $mainColorDarker;
+.continentGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .continent-image {
   width: 28%;
   height: auto;
+  text-align: center;
 }
 .countryContainer {
   background-color: #8a2e51;

@@ -13,15 +13,15 @@ import Oceania from './Oceania';
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
+      <div className="container">
         <Header />
         <ContinentList />
-        {/* <Africa /> */}
-        {/* <Asia /> */}
-        {/* <Europe /> */}
-        {/* <NorthAmerica /> */}
-        {/* <SouthAmerica /> */}
-        {/* <Oceania /> */}
+        {/* <Africa />
+        <Asia />
+        <Europe />
+        <NorthAmerica />
+        <SouthAmerica />
+        <Oceania /> */}
       </div>
     </Provider>
 

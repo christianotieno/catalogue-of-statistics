@@ -7,33 +7,22 @@ import continentsImages from '../helpers/containers/continentsImages';
 function ContinentList(props) {
   const { continents } = props;
   return (
-    <div>
-      <div
-        className="statsContainer"
-        id="statsContainer"
-      >
-        <h2>
-          <div className="stats" id="stats">
-            <div id="statsItems">
-              <marquee>
-                <p className="text-fluid">
-                  New confirmed: 100282 |
-                  Total confirmed: 1162857 |
-                  New deaths: 5658 |
-                  Total deaths: 63263 |
-                  New recovered: 15405 |
-                  Total recovered: 230845
-                </p>
-              </marquee>
-            </div>
-          </div>
-        </h2>
+    <div className="row">
+      <div className="stats col" id="statsItems">
+        <marquee>
+          <p className="font-weight-bold text-uppercase">
+            New confirmed: 100282.&nbsp;&nbsp;&nbsp;
+            Total confirmed: 1162857.&nbsp;&nbsp;&nbsp;
+            New deaths: 5658.&nbsp;&nbsp;&nbsp;
+            Total deaths: 63263.&nbsp;&nbsp;&nbsp;
+            New recovered: 15405.&nbsp;&nbsp;&nbsp;
+            Total recovered: 230845.
+          </p>
+        </marquee>
       </div>
-      <div className="continentlistContainer">
-        <div
-          className="asiaGrid"
-          id="asiaGrid"
-        >
+
+      <div className="row">
+        <div className="col dark-backround continentGrid">
           <h2>
             {continents.continents[0]}
           </h2>
@@ -42,26 +31,27 @@ function ContinentList(props) {
             className="continent-image"
             alt="asia"
           />
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
         </div>
-
-        <div
-          className="africaGrid"
-          id="africaGrid"
-        >
+        <div className="col darker-backround continentGrid">
           <h2>
             {continents.continents[1]}
           </h2>
           <img
             src={continentsImages[1]}
-            className="continent-image"
+            className="continent-image img-fluid"
             alt="africa"
           />
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
         </div>
+      </div>
 
-        <div
-          className="europeGrid"
-          id="europeGrid"
-        >
+      <div className="row">
+        <div className="col darker-backround continentGrid">
           <h2>
             {continents.continents[2]}
           </h2>
@@ -70,12 +60,11 @@ function ContinentList(props) {
             className="continent-image"
             alt="europe"
           />
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
         </div>
-
-        <div
-          className="oceaniaGrid"
-          id="oceaniaGrid"
-        >
+        <div className="col dark-backround continentGrid">
           <h2>
             {continents.continents[3]}
           </h2>
@@ -84,26 +73,27 @@ function ContinentList(props) {
             className="continent-image"
             alt="oceania"
           />
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
         </div>
+      </div>
 
-        <div
-          className="northAmericaGrid"
-          id="northAmericaGrid"
-        >
+      <div className="row">
+        <div className="col dark-backround continentGrid">
           <h2>
             {continents.continents[4]}
           </h2>
           <img
-            src={continentsImages[5]}
+            src={continentsImages[4]}
             className="continent-image"
             alt="northAmerica"
           />
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
         </div>
-
-        <div
-          className="southAmericaGrid"
-          id="southAmericaGrid"
-        >
+        <div className="col darker-backround continentGrid">
           <h2>
             {continents.continents[5]}
           </h2>
@@ -112,8 +102,10 @@ function ContinentList(props) {
             className="continent-image"
             alt="southAmerica"
           />
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
         </div>
-
       </div>
     </div>
   );
