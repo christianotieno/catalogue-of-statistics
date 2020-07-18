@@ -8,24 +8,27 @@ function Europe(props) {
   const country = Object.entries(europe).map((
     [key, value],
   ) => (
-    <li key={key}>
+
+    <button
+      key={key}
+      type="button"
+      className="list-group-item list-group-item-action"
+    >
+      {value}
       <button
         type="button"
-        className="btn btn-info"
+        className="statsCaller btn btn-info float-right"
       >
-        {value}
+        Check Statistics
       </button>
-    </li>
+    </button>
+
   ));
 
   return (
-    <div className="countryContainer">
-      <h2>Europe:</h2>
-      <hr />
-      <div>
-        <ul className="countryList">
-          {country}
-        </ul>
+    <div>
+      <div className="list-group">
+        {country}
       </div>
     </div>
   );

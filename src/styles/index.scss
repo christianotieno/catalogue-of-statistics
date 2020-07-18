@@ -59,27 +59,3 @@ p {
   height: auto;
   text-align: center;
 }
-.countryContainer {
-  background-color: #8a2e51;
-  text-align: center;
-  color: whitesmoke;
-  width: 30vw;
-  margin: 10px auto;
-  border-radius: 15px;
-}
-.countryList {
-  display: grid;
-  padding: 0;
-  margin: 0;
-  overflow: auto;
-  height: 30vw;
-  list-style: none;
-  overflow-x: hidden; //horizontal
-}
-
-.countryList button {
-  width: 90%;
-  height: auto;
-  font-weight: bolder;
-  margin: 3px auto;
-}
