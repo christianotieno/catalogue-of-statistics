@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes, { array } from 'prop-types';
 import { getContinent } from '../actions/index';
 import continentsImages from '../helpers/containers/continentsImages';
+import africaInfo from '../helpers/continentInfo/africa';
 
 function ContinentList(props) {
   const { continents } = props;
@@ -31,9 +32,15 @@ function ContinentList(props) {
             className="continent-image"
             alt="asia"
           />
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          </p>
+          <p>{africaInfo}</p>
+          <button className="btn btn-dark" type="button">
+            {' '}
+            {continents.continents[0]}
+            {' '}
+            &apos;s
+            stats per country
+          </button>
+
         </div>
         <div className="col darker-backround continentGrid">
           <h2>
@@ -44,9 +51,15 @@ function ContinentList(props) {
             className="continent-image img-fluid"
             alt="africa"
           />
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          </p>
+          <p>{africaInfo}</p>
+          <button className="btn btn-dark" type="button">
+            {' '}
+            {continents.continents[1]}
+            {' '}
+            &apos;s
+            stats per country
+          </button>
+          <br />
         </div>
       </div>
 
@@ -60,9 +73,15 @@ function ContinentList(props) {
             className="continent-image"
             alt="europe"
           />
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          </p>
+          <p>{africaInfo}</p>
+          <button className="btn btn-dark" type="button">
+            {' '}
+            {continents.continents[2]}
+            {' '}
+            &apos;s
+            stats per country
+          </button>
+
         </div>
         <div className="col dark-backround continentGrid">
           <h2>
@@ -73,9 +92,15 @@ function ContinentList(props) {
             className="continent-image"
             alt="oceania"
           />
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          </p>
+          <p>{africaInfo}</p>
+          <button className="btn btn-dark" type="button">
+            {' '}
+            {continents.continents[3]}
+            {' '}
+            &apos;s
+            stats per country
+          </button>
+          <br />
         </div>
       </div>
 
@@ -89,9 +114,15 @@ function ContinentList(props) {
             className="continent-image"
             alt="northAmerica"
           />
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          </p>
+          <p>{africaInfo}</p>
+          <button className="btn btn-dark" type="button">
+            {' '}
+            {continents.continents[4]}
+            {' '}
+            &apos;s
+            stats per country
+          </button>
+
         </div>
         <div className="col darker-backround continentGrid">
           <h2>
@@ -102,9 +133,15 @@ function ContinentList(props) {
             className="continent-image"
             alt="southAmerica"
           />
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          </p>
+          <p>{africaInfo}</p>
+          <button className="btn btn-dark" type="button">
+            {' '}
+            {continents.continents[5]}
+            {' '}
+            &apos;s
+            stats per country
+          </button>
+          <br />
         </div>
       </div>
     </div>

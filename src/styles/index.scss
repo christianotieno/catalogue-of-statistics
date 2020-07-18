@@ -36,13 +36,15 @@ p {
 }
 
 #statsItems {
-  background-color: $mainColorDarker;
+  background-color: $fontColor;
   margin-top: 0.5%;
   padding: 0.4% 0 0;
+  border-radius: 5px;
+  height: 2em;
 }
 
 #statsItems p {
-  color: yellow;
+  color: darkcyan;
 }
 
 .continentGrid {
