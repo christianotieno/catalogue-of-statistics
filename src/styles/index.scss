@@ -75,21 +75,31 @@ body {
   background-color: $mainColorDarker;
 }
 
+.continent-image {
+  width: 28%;
+  height: auto;
+}
 .countryContainer {
   background-color: #8a2e51;
   text-align: center;
   color: whitesmoke;
+  width: 30vw;
+  margin: 10px auto;
+  border-radius: 15px;
 }
 .countryList {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
   height: 30vw;
-  flex-wrap: wrap;
-  flex-direction: column;
   list-style: none;
+  overflow-x: hidden; //horizontal
 }
 
 .countryList button {
-  width: 200px;
-  margin: 2%;
+  width: 90%;
+  height: auto;
+  font-weight: bolder;
+  margin: 3px auto;
 }

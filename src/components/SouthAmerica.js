@@ -11,7 +11,7 @@ function SouthAmerica(props) {
   console.log(code);
   return (
     <div className="countryContainer">
-      <h2>South America: Click country of choice to view details:</h2>
+      <h2>South America:</h2>
       <hr />
       <div>
         <ul className="countryList">

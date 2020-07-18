@@ -40,7 +40,6 @@ function ContinentList(props) {
         >
           <h2>
             {continents.continents[0]}
-            &apos;s numbers:
           </h2>
           <img
             src={continentsImages[0]}
@@ -59,7 +58,6 @@ function ContinentList(props) {
         >
           <h2>
             {continents.continents[1]}
-            &apos;s numbers:
           </h2>
           <img
             src={continentsImages[1]}
@@ -78,7 +76,6 @@ function ContinentList(props) {
         >
           <h2>
             {continents.continents[2]}
-            &apos;s numbers:
           </h2>
           <img
             src={continentsImages[2]}
@@ -97,7 +94,6 @@ function ContinentList(props) {
         >
           <h2>
             {continents.continents[3]}
-            &apos;s numbers:
           </h2>
           <img
             src={continentsImages[3]}
@@ -116,7 +112,6 @@ function ContinentList(props) {
         >
           <h2>
             {continents.continents[4]}
-            &apos;s numbers:
           </h2>
           <img
             src={continentsImages[5]}
@@ -135,7 +130,6 @@ function ContinentList(props) {
         >
           <h2>
             {continents.continents[5]}
-            &apos;s numbers:
           </h2>
           <img
             src={continentsImages[5]}
