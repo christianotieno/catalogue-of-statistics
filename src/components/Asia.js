@@ -4,11 +4,20 @@ import { getCountry } from '../actions/index';
 
 function Asia(props) {
   const { asia } = props.asia;
-  const country = Object.values(asia).map(
-    value => <li><button type="button" className="btn btn-info">{value}</button></li>,
-  );
-  const code = Object.keys(asia).map(key => <li>{key}</li>);
-  console.log(code);
+
+  const country = Object.entries(asia).map((
+    [key, value],
+  ) => (
+    <li key={key}>
+      <button
+        type="button"
+        className="btn btn-info"
+      >
+        {value}
+      </button>
+    </li>
+  ));
+
   return (
     <div className="countryContainer">
       <h2>Asia:</h2>

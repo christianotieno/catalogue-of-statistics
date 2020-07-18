@@ -16,12 +16,12 @@ function App() {
       <div className="App">
         <Header />
         <ContinentList />
-        <Africa />
-        <Asia />
-        <Europe />
-        <NorthAmerica />
-        <SouthAmerica />
-        <Oceania />
+        {/* <Africa /> */}
+        {/* <Asia /> */}
+        {/* <Europe /> */}
+        {/* <NorthAmerica /> */}
+        {/* <SouthAmerica /> */}
+        {/* <Oceania /> */}
       </div>
     </Provider>
 

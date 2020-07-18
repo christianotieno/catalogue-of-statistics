@@ -4,11 +4,20 @@ import { getCountry } from '../actions/index';
 
 function SouthAmerica(props) {
   const { southAmerica } = props.southAmerica;
-  const country = Object.values(southAmerica).map(
-    value => <li><button type="button" className="btn btn-info">{value}</button></li>,
-  );
-  const code = Object.keys(southAmerica).map(key => <li>{key}</li>);
-  console.log(code);
+
+  const country = Object.entries(southAmerica).map((
+    [key, value],
+  ) => (
+    <li key={key}>
+      <button
+        type="button"
+        className="btn btn-info"
+      >
+        {value}
+      </button>
+    </li>
+  ));
+
   return (
     <div className="countryContainer">
       <h2>South America:</h2>

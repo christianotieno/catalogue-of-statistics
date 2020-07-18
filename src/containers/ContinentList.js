@@ -33,10 +33,6 @@ function ContinentList(props) {
         <div
           className="asiaGrid"
           id="asiaGrid"
-          onClick={() => getContinent}
-          onKeyDown={() => getContinent()}
-          role="button"
-          tabIndex={0}
         >
           <h2>
             {continents.continents[0]}
@@ -51,10 +47,6 @@ function ContinentList(props) {
         <div
           className="africaGrid"
           id="africaGrid"
-          onClick={() => getContinent}
-          onKeyDown={() => getContinent()}
-          role="button"
-          tabIndex={0}
         >
           <h2>
             {continents.continents[1]}
@@ -69,10 +61,6 @@ function ContinentList(props) {
         <div
           className="europeGrid"
           id="europeGrid"
-          onClick={() => getContinent}
-          onKeyDown={() => getContinent()}
-          role="button"
-          tabIndex={0}
         >
           <h2>
             {continents.continents[2]}
@@ -87,10 +75,6 @@ function ContinentList(props) {
         <div
           className="oceaniaGrid"
           id="oceaniaGrid"
-          onClick={() => getContinent}
-          onKeyDown={() => getContinent()}
-          role="button"
-          tabIndex={0}
         >
           <h2>
             {continents.continents[3]}
@@ -105,10 +89,6 @@ function ContinentList(props) {
         <div
           className="northAmericaGrid"
           id="northAmericaGrid"
-          onClick={() => getContinent}
-          onKeyDown={() => getContinent()}
-          role="button"
-          tabIndex={0}
         >
           <h2>
             {continents.continents[4]}
@@ -123,10 +103,6 @@ function ContinentList(props) {
         <div
           className="southAmericaGrid"
           id="southAmericaGrid"
-          onClick={() => getContinent}
-          onKeyDown={() => getContinent()}
-          role="button"
-          tabIndex={0}
         >
           <h2>
             {continents.continents[5]}

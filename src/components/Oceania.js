@@ -4,11 +4,20 @@ import { getCountry } from '../actions/index';
 
 function Oceania(props) {
   const { oceania } = props.oceania;
-  const country = Object.values(oceania).map(
-    value => <li><button type="button" className="btn btn-info">{value}</button></li>,
-  );
-  const code = Object.keys(oceania).map(key => <li>{key}</li>);
-  console.log(code);
+
+  const country = Object.entries(oceania).map((
+    [key, value],
+  ) => (
+    <li key={key}>
+      <button
+        type="button"
+        className="btn btn-info"
+      >
+        {value}
+      </button>
+    </li>
+  ));
+
   return (
     <div className="countryContainer">
       <h2>Oceania:</h2>
