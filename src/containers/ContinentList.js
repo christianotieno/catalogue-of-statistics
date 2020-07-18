@@ -1,9 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes, { array } from 'prop-types';
+import AsianModal from './modals/AsianModal';
 import { getContinent } from '../actions/index';
-import continentsImages from '../helpers/containers/continentsImages';
+import AfricanModal from './modals/AfricanModal';
+import EuropeanModal from './modals/EuropeanModal';
+import OceanianModal from './modals/OceanianModal';
 import africaInfo from '../helpers/continentInfo/africa';
+import NorthAmericanModal from './modals/NorthAmericanModal';
+import SouthAmericanModal from './modals/SouthAmericanModal';
+import continentsImages from '../helpers/containers/continentsImages';
 
 function ContinentList(props) {
   const { continents } = props;
@@ -33,14 +39,7 @@ function ContinentList(props) {
             alt="asia"
           />
           <p>{africaInfo}</p>
-          <button className="btn btn-dark" type="button">
-            {' '}
-            {continents.continents[0]}
-            {' '}
-            &apos;s
-            stats per country
-          </button>
-
+          <AsianModal />
         </div>
         <div className="col darker-backround continentGrid">
           <h2>
@@ -52,13 +51,7 @@ function ContinentList(props) {
             alt="africa"
           />
           <p>{africaInfo}</p>
-          <button className="btn btn-dark" type="button">
-            {' '}
-            {continents.continents[1]}
-            {' '}
-            &apos;s
-            stats per country
-          </button>
+          <AfricanModal />
           <br />
         </div>
       </div>
@@ -74,14 +67,7 @@ function ContinentList(props) {
             alt="europe"
           />
           <p>{africaInfo}</p>
-          <button className="btn btn-dark" type="button">
-            {' '}
-            {continents.continents[2]}
-            {' '}
-            &apos;s
-            stats per country
-          </button>
-
+          <EuropeanModal />
         </div>
         <div className="col dark-backround continentGrid">
           <h2>
@@ -93,13 +79,7 @@ function ContinentList(props) {
             alt="oceania"
           />
           <p>{africaInfo}</p>
-          <button className="btn btn-dark" type="button">
-            {' '}
-            {continents.continents[3]}
-            {' '}
-            &apos;s
-            stats per country
-          </button>
+          <OceanianModal />
           <br />
         </div>
       </div>
@@ -115,13 +95,7 @@ function ContinentList(props) {
             alt="northAmerica"
           />
           <p>{africaInfo}</p>
-          <button className="btn btn-dark" type="button">
-            {' '}
-            {continents.continents[4]}
-            {' '}
-            &apos;s
-            stats per country
-          </button>
+          <NorthAmericanModal />
 
         </div>
         <div className="col darker-backround continentGrid">
@@ -134,13 +108,8 @@ function ContinentList(props) {
             alt="southAmerica"
           />
           <p>{africaInfo}</p>
-          <button className="btn btn-dark" type="button">
-            {' '}
-            {continents.continents[5]}
-            {' '}
-            &apos;s
-            stats per country
-          </button>
+          <SouthAmericanModal />
+
           <br />
         </div>
       </div>

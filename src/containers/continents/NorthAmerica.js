@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getCountry } from '../actions/index';
+import { getCountry } from '../../actions/index';
 
 function NorthAmerica(props) {
   const { northAmerica } = props.northAmerica;

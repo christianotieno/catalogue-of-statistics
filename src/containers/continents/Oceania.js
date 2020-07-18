@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getCountry } from '../actions/index';
+import { getCountry } from '../../actions/index';
 
-function Europe(props) {
-  const { europe } = props.europe;
+function Oceania(props) {
+  const { oceania } = props.oceania;
 
-  const country = Object.entries(europe).map((
+  const country = Object.entries(oceania).map((
     [key, value],
   ) => (
     <li key={key}>
@@ -20,7 +20,7 @@ function Europe(props) {
 
   return (
     <div className="countryContainer">
-      <h2>Europe:</h2>
+      <h2>Oceania:</h2>
       <hr />
       <div>
         <ul className="countryList">
@@ -32,7 +32,7 @@ function Europe(props) {
 }
 
 const mapStateToProps = state => ({
-  europe: state.europe,
+  oceania: state.oceania,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -41,4 +41,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Europe);
+)(Oceania);
