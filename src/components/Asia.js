@@ -4,13 +4,20 @@ import { getCountry } from '../actions/index';
 
 function Asia(props) {
   const { asia } = props.asia;
-  const country = Object.values(asia).map(value => <li>{value}</li>);
+  const country = Object.values(asia).map(
+    value => <li><button type="button" className="btn btn-info">{value}</button></li>,
+  );
   const code = Object.keys(asia).map(key => <li>{key}</li>);
   console.log(code);
   return (
-    <div>
-      <h2>Asian Continent</h2>
-      <ul>{country}</ul>
+    <div className="countryContainer">
+      <h2>Asia: Click country of choice to view details:</h2>
+      <hr />
+      <div>
+        <ul className="countryList">
+          {country}
+        </ul>
+      </div>
     </div>
   );
 }

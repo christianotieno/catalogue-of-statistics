@@ -74,3 +74,22 @@ body {
 #southAmericaGrid {
   background-color: $mainColorDarker;
 }
+
+.countryContainer {
+  background-color: #8a2e51;
+  text-align: center;
+  color: whitesmoke;
+}
+.countryList {
+  display: flex;
+  justify-content: center;
+  height: 30vw;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+}
+
+.countryList button {
+  width: 200px;
+  margin: 2%;
+}

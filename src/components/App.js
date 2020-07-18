@@ -2,7 +2,6 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import store from '../react-store/store';
 import Header from './Header';
-import '../styles/App.scss';
 import ContinentList from '../containers/ContinentList';
 import Africa from './Africa';
 import Asia from './Asia';

@@ -138,7 +138,7 @@ function ContinentList(props) {
             &apos;s numbers:
           </h2>
           <img
-            src={continentsImages[6]}
+            src={continentsImages[5]}
             className="continent-image"
             alt="southAmerica"
           />
