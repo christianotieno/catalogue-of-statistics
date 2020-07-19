@@ -19,11 +19,11 @@ function NorthAmericanModal() {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>
+          <Modal.Title className="zulu">
             {' '}
             {northAmerica}
             &apos;s
-            stats per country
+            stats-per-country:
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -31,7 +31,7 @@ function NorthAmericanModal() {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="danger" onClick={handleClose}>
-            Close
+            Close page list
           </Button>
         </Modal.Footer>
       </Modal>

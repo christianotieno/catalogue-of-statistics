@@ -17,7 +17,7 @@ function SouthAmerica(props) {
       {value}
       <button
         type="button"
-        className="statsCaller btn btn-info float-right"
+        className="statsCaller btn btn-success float-right"
       >
         Check Statistics
       </button>

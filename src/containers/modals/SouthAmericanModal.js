@@ -11,7 +11,7 @@ function SouthAmericanModal() {
   const handleShow = () => setShow(true);
   return (
     <>
-      <Button variant="dark" onClick={handleShow}>
+      <Button variant="info" onClick={handleShow}>
         {southAmerica}
         &apos;s
         stats per country
@@ -19,11 +19,11 @@ function SouthAmericanModal() {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>
+          <Modal.Title className="zulu">
             {' '}
             {southAmerica}
             &apos;s
-            stats per country
+            stats-per-country:
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -31,7 +31,7 @@ function SouthAmericanModal() {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="danger" onClick={handleClose}>
-            Close
+            Close page list
           </Button>
         </Modal.Footer>
       </Modal>

@@ -6,10 +6,17 @@ import { getContinent } from '../actions/index';
 import AfricanModal from './modals/AfricanModal';
 import EuropeanModal from './modals/EuropeanModal';
 import OceanianModal from './modals/OceanianModal';
-import africaInfo from '../helpers/continentInfo/africa';
 import NorthAmericanModal from './modals/NorthAmericanModal';
 import SouthAmericanModal from './modals/SouthAmericanModal';
 import continentsImages from '../helpers/containers/continentsImages';
+import {
+  asiaInfo,
+  africaInfo,
+  europeInfo,
+  oceaniaInfo,
+  northAmericaInfo,
+  southAmericaInfo,
+} from '../helpers/continentInfo/contentInfo';
 
 function ContinentList(props) {
   const { continents } = props;
@@ -18,19 +25,19 @@ function ContinentList(props) {
       <div className="stats col" id="statsItems">
         <marquee>
           <p className="font-weight-bold text-uppercase">
-            New confirmed: 100282.&nbsp;&nbsp;&nbsp;
-            Total confirmed: 1162857.&nbsp;&nbsp;&nbsp;
-            New deaths: 5658.&nbsp;&nbsp;&nbsp;
-            Total deaths: 63263.&nbsp;&nbsp;&nbsp;
-            New recovered: 15405.&nbsp;&nbsp;&nbsp;
-            Total recovered: 230845.
+            New confirmed: 100282&nbsp;&nbsp;&nbsp;
+            Total confirmed: 1162857&nbsp;&nbsp;&nbsp;
+            New deaths: 5658&nbsp;&nbsp;&nbsp;
+            Total deaths: 63263&nbsp;&nbsp;&nbsp;
+            New recovered: 15405&nbsp;&nbsp;&nbsp;
+            Total recovered: 230845
           </p>
         </marquee>
       </div>
 
       <div className="row">
         <div className="col dark-backround continentGrid">
-          <h2>
+          <h2 className="darkHeaderColor">
             {continents.continents[0]}
           </h2>
           <img
@@ -38,11 +45,11 @@ function ContinentList(props) {
             className="continent-image"
             alt="asia"
           />
-          <p>{africaInfo}</p>
+          <p>{asiaInfo}</p>
           <AsianModal />
         </div>
         <div className="col darker-backround continentGrid">
-          <h2>
+          <h2 className="lightHeaderColor">
             {continents.continents[1]}
           </h2>
           <img
@@ -58,7 +65,7 @@ function ContinentList(props) {
 
       <div className="row">
         <div className="col darker-backround continentGrid">
-          <h2>
+          <h2 className="lightHeaderColor">
             {continents.continents[2]}
           </h2>
           <img
@@ -66,11 +73,11 @@ function ContinentList(props) {
             className="continent-image"
             alt="europe"
           />
-          <p>{africaInfo}</p>
+          <p>{europeInfo}</p>
           <EuropeanModal />
         </div>
         <div className="col dark-backround continentGrid">
-          <h2>
+          <h2 className="darkHeaderColor">
             {continents.continents[3]}
           </h2>
           <img
@@ -78,7 +85,7 @@ function ContinentList(props) {
             className="continent-image"
             alt="oceania"
           />
-          <p>{africaInfo}</p>
+          <p>{oceaniaInfo}</p>
           <OceanianModal />
           <br />
         </div>
@@ -86,7 +93,7 @@ function ContinentList(props) {
 
       <div className="row">
         <div className="col dark-backround continentGrid">
-          <h2>
+          <h2 className="darkHeaderColor">
             {continents.continents[4]}
           </h2>
           <img
@@ -94,12 +101,12 @@ function ContinentList(props) {
             className="continent-image"
             alt="northAmerica"
           />
-          <p>{africaInfo}</p>
+          <p>{northAmericaInfo}</p>
           <NorthAmericanModal />
 
         </div>
         <div className="col darker-backround continentGrid">
-          <h2>
+          <h2 className="lightHeaderColor">
             {continents.continents[5]}
           </h2>
           <img
@@ -107,7 +114,7 @@ function ContinentList(props) {
             className="continent-image"
             alt="southAmerica"
           />
-          <p>{africaInfo}</p>
+          <p>{southAmericaInfo}</p>
           <SouthAmericanModal />
 
           <br />

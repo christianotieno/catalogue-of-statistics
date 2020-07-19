@@ -1,7 +1,9 @@
-$mainColor: #ec4c8a;
-$mainColorDarker:#d6457c;
-$mainColorDark: #Df4782;
+$mainColor: #011627;
+$mainColorDarker:#086788;
+$mainColorDark: #6A7D90;
 $fontColor: #f8fefd;
+$lightHeaderColor: #38f0c8;
+$darkHeaderColor: #024433;
 
 .root {
   height: 100vh;
@@ -9,11 +11,8 @@ $fontColor: #f8fefd;
 
 body {
   background-color: $mainColor;
-  // color: $fontColor;
-}
-
-h2 {
   color: $fontColor;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .darker-backround {
@@ -24,16 +23,17 @@ h2 {
   background-color: $mainColorDark;
 }
 
-p {
-  text-align: center;
-}
-
 .header, 
 .row {
   margin: 0.5% 0;
 }
+
 .navbar {
   border-radius: 5px;
+}
+
+.zulu {
+  color: $mainColor;
 }
 
 #statsItems {
@@ -45,7 +45,25 @@ p {
 }
 
 #statsItems p {
-  color: darkcyan;
+  color: #4369B2;
+}
+
+
+
+.lightHeaderColor{
+  color: $lightHeaderColor;
+}
+
+.darkHeaderColor {
+  color: $darkHeaderColor;
+}
+
+h2 {
+  color: black
+}
+
+p {
+  text-align: center;
 }
 
 .continentGrid {
@@ -58,4 +76,12 @@ p {
   width: 28%;
   height: auto;
   text-align: center;
+}
+
+footer {
+  background-color: $darkHeaderColor;
+  border-radius: 5px;
+}
+.social {
+  height: 1.5em;
 }

@@ -3,6 +3,8 @@ import { Provider } from 'react-redux';
 import Header from './Header';
 import store from '../react-store/store';
 import ContinentList from '../containers/ContinentList';
+import TestApi from './TestApi';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <div className="container">
         <Header />
         <ContinentList />
+        {/* <TestApi /> */}
+        <Footer />
       </div>
     </Provider>
 
