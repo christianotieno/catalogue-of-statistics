@@ -1,5 +1,3 @@
-// import africa from './AfricanCountries';
-
 const continents = [
   'Asia',
   'Africa',
