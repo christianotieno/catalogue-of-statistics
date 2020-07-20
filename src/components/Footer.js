@@ -13,7 +13,7 @@ function Footer() {
           <a
             href="https://twitter.com/iamchrisotieno"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <img
               src={twitter}
@@ -26,7 +26,7 @@ function Footer() {
           <a
             href="https://github.com/christianotieno/react-covid19-catalogue"
             target="_blank"
-            rel="noreferrer"
+            rel="nnoopener noreferrer"
           >
             <img
               src={github}
@@ -39,7 +39,7 @@ function Footer() {
           <a
             href="https://www.linkedin.com/in/christianotieno/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <img
               src={linkedin}

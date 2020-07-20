@@ -32,7 +32,7 @@ function CountryStatModal(props) {
   const values = Object.values(stats);
   return (
     <>
-      <Button id={id} variant="success" onClick={handleShow}>
+      <Button variant="success" onClick={handleShow}>
         Check Statistics
       </Button>
       <Modal show={show} onHide={handleClose}>
