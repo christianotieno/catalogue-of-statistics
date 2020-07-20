@@ -27,7 +27,7 @@ function CountryStatModal(props) {
       .catch(error => {
         setError(error);
       });
-  }, []);
+  }, [id]);
 
   const values = Object.values(stats);
   return (

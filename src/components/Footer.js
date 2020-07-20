@@ -26,7 +26,7 @@ function Footer() {
           <a
             href="https://github.com/christianotieno/react-covid19-catalogue"
             target="_blank"
-            rel="nnoopener noreferrer"
+            rel="noopener noreferrer"
           >
             <img
               src={github}
