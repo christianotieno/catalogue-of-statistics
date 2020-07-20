@@ -2,7 +2,13 @@
 
 > This project is based on a catalogue of statistics
 
+## APP Screenshot
+
 ![Screenshot](./src/assets/img/readme-docs/screenshot.png)
+
+## User journey
+
+![app-gif](./src/assets/img/readme-docs/app.gif)
 
 ## 1. Getting Started: Additional description about the project and its features
 
