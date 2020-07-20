@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { getCountry } from '../../actions/index';
-import CountryStatModal from '../CountryStat';
+import CountryStatModal from '../CountryStatModal';
 
 function NorthAmerica(props) {
   const { northAmerica } = props.northAmerica;
@@ -19,7 +19,7 @@ function NorthAmerica(props) {
       <div
         className="float-right"
       >
-        <CountryStatModal />
+        <CountryStatModal id={key} value={value} />
       </div>
     </button>
 

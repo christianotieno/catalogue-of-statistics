@@ -1,18 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { getCountry } from '../../actions/index';
-import CountryStatModal from '../CountryStat';
+import CountryStatModal from '../CountryStatModal';
 
 function Africa(props) {
   const { africa } = props.africa;
 
-  const key = Object.keys(africa);
-  console.log(key);
   const country = Object.entries(africa).map((
     [key, value],
   ) => (
     <button
       key={key}
+      // id={key}
       type="button"
       className="list-group-item list-group-item-action"
     >
@@ -20,11 +19,11 @@ function Africa(props) {
       <div
         className="float-right"
       >
-        <CountryStatModal key={key} />
+        <CountryStatModal id={key} value={value} />
       </div>
     </button>
   ));
-  console.log(country);
+  // console.log(country);
 
   return (
     <div>
