@@ -5,9 +5,11 @@ import { getCountry } from '../../actions/index';
 import CountryStatModal from '../CountryStatModal';
 
 function Africa(props) {
-  const { africa } = props.africa;
+  const { africa } = props;
 
-  const country = Object.entries(africa).map((
+  // console.log(props.africa.africa);
+
+  const country = Object.entries(africa.africa).map((
     [key, value],
   ) => (
     <button

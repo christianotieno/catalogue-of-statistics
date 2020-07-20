@@ -4,14 +4,14 @@ import Header from './Header';
 import Footer from './Footer';
 import store from '../react-store/store';
 import ContinentList from '../containers/ContinentList';
-import Marquee from './Marquee';
+import MarqueeText from './MarqueeText';
 
 function App() {
   return (
     <Provider store={store}>
       <div className="container">
         <Header />
-        <Marquee />
+        <MarqueeText />
         <ContinentList />
         <Footer />
       </div>

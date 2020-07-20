@@ -5,9 +5,9 @@ import { getCountry } from '../../actions/index';
 import CountryStatModal from '../CountryStatModal';
 
 function SouthAmerica(props) {
-  const { southAmerica } = props.southAmerica;
+  const { southAmerica } = props;
 
-  const country = Object.entries(southAmerica).map((
+  const country = Object.entries(southAmerica.southAmerica).map((
     [key, value],
   ) => (
 

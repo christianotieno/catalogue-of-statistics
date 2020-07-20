@@ -5,9 +5,9 @@ import { getCountry } from '../../actions/index';
 import CountryStatModal from '../CountryStatModal';
 
 function Oceania(props) {
-  const { oceania } = props.oceania;
+  const { oceania } = props;
 
-  const country = Object.entries(oceania).map((
+  const country = Object.entries(oceania.oceania).map((
     [key, value],
   ) => (
 

@@ -116,7 +116,7 @@ ContinentList.prototype = {
 };
 
 ContinentList.propTypes = {
-  continents: PropTypes.objectOf(PropTypes.object).isRequired,
+  continents: PropTypes.objectOf(PropTypes.array).isRequired,
 };
 
 const mapStateToProps = state => ({

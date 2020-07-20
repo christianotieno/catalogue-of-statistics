@@ -5,9 +5,9 @@ import { getCountry } from '../../actions/index';
 import CountryStatModal from '../CountryStatModal';
 
 function Europe(props) {
-  const { europe } = props.europe;
+  const { europe } = props;
 
-  const country = Object.entries(europe).map((
+  const country = Object.entries(europe.europe).map((
     [key, value],
   ) => (
 
