@@ -3,7 +3,7 @@ $mainColorDarker:#086788;
 $mainColorDark: #800000;
 $fontColor: #f8fefd;
 $lightHeaderColor: #38f0c8;
-$darkHeaderColor: #ffff00;
+$darkHeaderColor: #ff0;
 
 .root {
   height: 100vh;
@@ -19,14 +19,14 @@ body {
   background-color: $mainColorDarker;
   margin: 5px;
   border-radius: 5px;
-  box-shadow: 5px 5px 15px #000
+  box-shadow: 5px 5px 15px #000;
 }
 
 .dark-backround {
   background-color: $mainColorDark;
   margin: 5px;
   border-radius: 5px;
-  box-shadow: 5px 5px 15px #000
+  box-shadow: 5px 5px 15px #000;
 }
 
 .lightHeaderColor {
@@ -52,7 +52,6 @@ body {
 .row {
   margin: 0.5% 0;
 }
-
 
 h2 {
   color: #000
@@ -80,6 +79,7 @@ footer {
   border-radius: 5px;
   margin: 0 0 10px;
 }
+
 .social {
   height: 1.5em;
 }

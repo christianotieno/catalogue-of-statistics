@@ -90,9 +90,9 @@ Your app is ready to be deployed!
 
 ---
 
-## 7. Live Link
+## 7. Live link
 
-[Link to Live Play]()
+[Link to Live Page](https://covid-19-catalogue.netlify.app/)
 
 ---
 
