@@ -22,19 +22,6 @@ function ContinentList(props) {
   const { continents } = props;
   return (
     <div className="row">
-      <div className="stats col" id="statsItems">
-        <marquee>
-          <p className="font-weight-bold text-uppercase">
-            New confirmed: 100282&nbsp;&nbsp;&nbsp;
-            Total confirmed: 1162857&nbsp;&nbsp;&nbsp;
-            New deaths: 5658&nbsp;&nbsp;&nbsp;
-            Total deaths: 63263&nbsp;&nbsp;&nbsp;
-            New recovered: 15405&nbsp;&nbsp;&nbsp;
-            Total recovered: 230845
-          </p>
-        </marquee>
-      </div>
-
       <div className="row">
         <div className="col dark-backround continentGrid">
           <h2 className="darkHeaderColor">

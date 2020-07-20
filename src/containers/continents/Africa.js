@@ -6,6 +6,8 @@ import CountryStatModal from '../CountryStat';
 function Africa(props) {
   const { africa } = props.africa;
 
+  const key = Object.keys(africa);
+  console.log(key);
   const country = Object.entries(africa).map((
     [key, value],
   ) => (
