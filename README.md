@@ -86,7 +86,7 @@ Your app is ready to be deployed!
 
 |  APP NAME | BUILD STATUS: |
 |   :---:   |    :---:     |
-|**Covid-19 api** | [![Netlify Status]() |
+|**Covid-19-catalogue** | [![Netlify Status](https://api.netlify.com/api/v1/badges/4adb337c-5633-455d-971e-132e2db2db6b/deploy-status)](https://app.netlify.com/sites/covid-19-catalogue/deploys) |
 
 ---
 
