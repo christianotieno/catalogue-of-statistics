@@ -1,9 +1,9 @@
-$mainColor: #011627;
+$mainColor:#fff;
 $mainColorDarker:#086788;
-$mainColorDark: #6A7D90;
+$mainColorDark: #800000;
 $fontColor: #f8fefd;
 $lightHeaderColor: #38f0c8;
-$darkHeaderColor: #024433;
+$darkHeaderColor: #ffff00;
 
 .root {
   height: 100vh;
@@ -17,33 +17,32 @@ body {
 
 .darker-backround {
   background-color: $mainColorDarker;
-  margin: 2px;
+  margin: 5px;
   border-radius: 5px;
+  box-shadow: 5px 5px 15px #000
 }
 
 .dark-backround {
   background-color: $mainColorDark;
-  margin: 2px;
+  margin: 5px;
   border-radius: 5px;
+  box-shadow: 5px 5px 15px #000
+}
+
+.lightHeaderColor {
+  color: $lightHeaderColor;
+}
+
+.darkHeaderColor {
+  color: $darkHeaderColor;
 }
 
 .header {
   margin: 10px 0 0.5%;
-} 
-.row {
-  margin: 0.5% 0;
-}
-
-.navbar {
-  border-radius: 5px;
-}
-
-.zulu {
-  color: $mainColor;
 }
 
 #statsItems {
-  background-color: $fontColor;
+  background-color: #f5f5f5;
   margin-top: 0.5%;
   padding: 0.4% 0 0;
   border-radius: 5px;
@@ -54,18 +53,21 @@ body {
   color: #4369B2;
 }
 
-
-
-.lightHeaderColor{
-  color: $lightHeaderColor;
+.navbar {
+  border-radius: 5px;
 }
 
-.darkHeaderColor {
-  color: $darkHeaderColor;
+.zulu {
+  color: $mainColorDarker;
 }
+
+.row {
+  margin: 0.5% 0;
+}
+
 
 h2 {
-  color: black
+  color: #000
 }
 
 p {
@@ -85,7 +87,8 @@ p {
 }
 
 footer {
-  background-color: $darkHeaderColor;
+  background-color: #f5f5f5;
+  box-shadow: 5px 5px 10px #000;
   border-radius: 5px;
   margin: 0 0 10px;
 }

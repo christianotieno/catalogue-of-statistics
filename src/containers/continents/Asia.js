@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { getCountry } from '../../actions/index';
+import CountryStatModal from '../CountryStat';
 
 function Asia(props) {
   const { asia } = props.asia;
@@ -15,12 +16,11 @@ function Asia(props) {
       className="list-group-item list-group-item-action"
     >
       {value}
-      <button
-        type="button"
-        className="statsCaller btn btn-success float-right"
+      <div
+        className="float-right"
       >
-        Check Statistics
-      </button>
+        <CountryStatModal />
+      </div>
     </button>
 
   ));

@@ -11,7 +11,7 @@ function NorthAmericanModal() {
   const handleShow = () => setShow(true);
   return (
     <>
-      <Button variant="dark" onClick={handleShow}>
+      <Button variant="warning" onClick={handleShow}>
         {northAmerica}
         &apos;s
         stats per country
