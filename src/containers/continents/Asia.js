@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { getCountry } from '../../actions/index';
 import CountryStatModal from '../CountryStatModal';
 
@@ -33,6 +34,10 @@ function Asia(props) {
     </div>
   );
 }
+
+Asia.propTypes = {
+  asia: PropTypes.objectOf(PropTypes.object).isRequired,
+};
 
 const mapStateToProps = state => ({
   asia: state.asia,

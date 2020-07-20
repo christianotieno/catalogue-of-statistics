@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { getCountry } from '../../actions/index';
 import CountryStatModal from '../CountryStatModal';
 
@@ -11,7 +12,7 @@ function Africa(props) {
   ) => (
     <button
       key={key}
-      // id={key}
+      id={key}
       type="button"
       className="list-group-item list-group-item-action"
     >
@@ -23,7 +24,6 @@ function Africa(props) {
       </div>
     </button>
   ));
-  // console.log(country);
 
   return (
     <div>
@@ -33,6 +33,10 @@ function Africa(props) {
     </div>
   );
 }
+
+Africa.propTypes = {
+  africa: PropTypes.objectOf(PropTypes.object).isRequired,
+};
 
 const mapStateToProps = state => ({
   africa: state.africa,

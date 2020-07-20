@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import PropTypes, { array } from 'prop-types';
+import PropTypes from 'prop-types';
 import AsianModal from './modals/AsianModal';
 import { getContinent } from '../actions/index';
 import AfricanModal from './modals/AfricanModal';
@@ -112,7 +112,11 @@ function ContinentList(props) {
 }
 
 ContinentList.prototype = {
-  continents: PropTypes.instanceOf(array).isRequired,
+
+};
+
+ContinentList.propTypes = {
+  continents: PropTypes.objectOf(PropTypes.object).isRequired,
 };
 
 const mapStateToProps = state => ({

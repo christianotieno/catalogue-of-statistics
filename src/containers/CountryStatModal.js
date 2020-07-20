@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Modal } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 import axios from 'axios';
 
 function CountryStatModal(props) {
@@ -9,13 +10,11 @@ function CountryStatModal(props) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const key = props.id;
-  const nation = props.value;
-
-  console.log(key);
+  const { id } = props;
+  const { value } = props;
 
   useEffect(() => {
-    axios.get(`https://www.trackcorona.live/api/countries/${key}`)
+    axios.get(`https://www.trackcorona.live/api/countries/${id}`)
       .then(results => {
         setStats({
           country_code: results.data.data[0].country_code,
@@ -32,7 +31,7 @@ function CountryStatModal(props) {
   const values = Object.values(stats);
   return (
     <>
-      <Button id={key} variant="success" onClick={handleShow}>
+      <Button id={id} variant="success" onClick={handleShow}>
         Check Statistics
       </Button>
       <Modal show={show} onHide={handleClose}>
@@ -40,7 +39,7 @@ function CountryStatModal(props) {
           <Modal.Title className="zulu">
             Covid-19 Numbers for
             {' '}
-            {nation}
+            {value}
             :
           </Modal.Title>
         </Modal.Header>
@@ -72,14 +71,16 @@ function CountryStatModal(props) {
           <Button variant="info" onClick={handleClose}>
             Go Back
           </Button>
-          <Button variant="success" onClick={handleClose}>
-            Get live results
-          </Button>
         </Modal.Footer>
       </Modal>
     </>
 
   );
 }
+
+CountryStatModal.propTypes = {
+  id: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+};
 
 export default CountryStatModal;
