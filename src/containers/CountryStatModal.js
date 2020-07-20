@@ -6,6 +6,7 @@ import axios from 'axios';
 function CountryStatModal(props) {
   const [show, setShow] = useState(false);
   const [stats, setStats] = useState({});
+  const [error, setError] = useState('');
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -24,7 +25,7 @@ function CountryStatModal(props) {
         });
       })
       .catch(error => {
-        console.log(error);
+        setError(error);
       });
   }, []);
 
@@ -54,15 +55,27 @@ function CountryStatModal(props) {
             <tbody>
               <tr className="bg-info">
                 <th scope="row">Confirmed:</th>
-                <td>{values[1]}</td>
+                <td>
+                  {values[1]}
+                  {' '}
+                  {error}
+                </td>
               </tr>
               <tr className="bg-success">
                 <th scope="row">Recovered:</th>
-                <td>{values[2]}</td>
+                <td>
+                  {values[2]}
+                  {' '}
+                  {error}
+                </td>
               </tr>
               <tr className="bg-danger">
                 <th scope="row">Deaths:</th>
-                <td>{values[3]}</td>
+                <td>
+                  {values[3]}
+                  {' '}
+                  {error}
+                </td>
               </tr>
             </tbody>
           </table>
