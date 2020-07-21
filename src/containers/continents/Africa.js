@@ -7,12 +7,10 @@ import CountryStatModal from '../CountryStatModal';
 function Africa(props) {
   const { africa } = props;
 
-  // console.log(props.africa.africa);
-
   const country = Object.entries(africa.africa).map((
     [key, value],
   ) => (
-    <button
+    <div
       key={key}
       id={key}
       type="button"
@@ -24,7 +22,7 @@ function Africa(props) {
       >
         <CountryStatModal id={key} value={value} />
       </div>
-    </button>
+    </div>
   ));
 
   return (

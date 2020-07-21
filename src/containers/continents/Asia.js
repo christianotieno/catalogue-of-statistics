@@ -11,9 +11,8 @@ function Asia(props) {
     [key, value],
   ) => (
 
-    <button
+    <div
       key={key}
-      type="button"
       className="list-group-item list-group-item-action"
     >
       {value}
@@ -22,7 +21,7 @@ function Asia(props) {
       >
         <CountryStatModal id={key} value={value} />
       </div>
-    </button>
+    </div>
 
   ));
 
