@@ -1,15 +1,15 @@
 .main-page {
-  background-color: #EC4C8A;
+  background-color: #ec4c8a;
   font-size: 3.6vw;
 }
 
-.main-div{
+.main-div {
   border-top: 1px solid #d3d3d3;
   background-image:
-    linear-gradient(to right, rgba(0, 0, 0,0.80), rgba(230, 74, 135, 0.70)),
+    linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(230, 74, 135, 0.7)),
     url('../assets/img/global-coronavirus.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   height: 50vh;
 }

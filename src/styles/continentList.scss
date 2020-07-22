@@ -4,7 +4,8 @@
   background-position: center;
   height: 10vh;
 }
-.nav  {
+
+.nav {
   height: 6vh;
 }
 
@@ -14,38 +15,38 @@
 
 .africa {
   background-image:
-  linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(#E64A87, 0.73)),
-  url('../assets/img/africa.png');
+    linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(230, 74, 135, 0.73)),
+    url('../assets/img/africa.png');
 }
 
 .asia {
   background-image:
-  linear-gradient(to right, rgba(0, 0, 0, 0.62), rgba(#E64A87, 0.73)),
-  url('../assets/img/asia.png');
+    linear-gradient(to right, rgba(0, 0, 0, 0.62), rgba(230, 74, 135, 0.73)),
+    url('../assets/img/asia.png');
 }
 
 .europe {
   background-image:
-  linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(#EC4C8A, 0.73)),
-  url('../assets/img/europe.png');
+    linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(230, 74, 135, 0.73)),
+    url('../assets/img/europe.png');
 }
 
 .oceania {
   background-image:
-  linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(#E64A87, 0.73)),
-  url('../assets/img/oceania.png');
+    linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(230, 74, 135, 0.73)),
+    url('../assets/img/oceania.png');
 }
 
 .north {
   background-image:
-  linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(#E64A87, 0.73)),
-  url('../assets/img/northAmerica.png');
+    linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(230, 74, 135, 0.73)),
+    url('../assets/img/northAmerica.png');
 }
 
 .south {
   background-image:
-  linear-gradient(to right, rgba(0, 0, 0, 0.32), rgba(#E64A87, 0.73)),
-  url('../assets/img/southAmerica.png');
+    linear-gradient(to right, rgba(0, 0, 0, 0.32), rgba(230, 74, 135, 0.73)),
+    url('../assets/img/southAmerica.png');
 }
 
 .country {
