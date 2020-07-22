@@ -1,13 +1,5 @@
 $mainColor: #d3d3d3;
-$mainColorDarker:#086788;
-$mainColorDark: #800000;
 $fontColor: #f8fefd;
-$lightHeaderColor: #38f0c8;
-$darkHeaderColor: #ff0;
-
-.root {
-  height: 100vh;
-}
 
 body {
   background-color: $mainColor;
@@ -15,71 +7,46 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.darker-backround {
-  background-color: $mainColorDarker;
-  margin: 5px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 15px #000;
-}
-
-.dark-backround {
-  background-color: $mainColorDark;
-  margin: 5px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 15px #000;
-}
-
-.lightHeaderColor {
-  color: $lightHeaderColor;
-}
-
-.darkHeaderColor {
-  color: $darkHeaderColor;
-}
-
-.header {
-  margin: 10px 0 0.5%;
-}
-
-.navbar {
-  border-radius: 5px;
+.container {
+  background-color: #EC4C8A;
 }
 
 .zulu {
-  color: $mainColorDarker;
-}
-
-.row {
-  margin: 0.5% 0;
-}
-
-h2 {
   color: #000;
 }
 
-p {
-  text-align: center;
-}
-
-.continentGrid {
+.nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.nav-link {
+  color: $fontColor;
+  font-weight: bolder;
 }
 
-.continent-image {
-  width: 28%;
-  height: auto;
+.header-tag {
   text-align: center;
 }
 
-footer {
-  background-color: #f5f5f5;
-  box-shadow: 5px 5px 10px #000;
-  border-radius: 5px;
-  margin: 0 0 10px;
+.about-section, 
+.contact-section {
+  border-top: 1px solid $mainColor;
+}
+
+.header-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .social {
-  height: 1.5em;
+  height: 2.5em;
 }
+
+.contact-section {
+  height: 90vh;
+}
+
+

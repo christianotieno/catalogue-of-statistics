@@ -1,8 +1,9 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import { getCountry } from '../../actions/index';
-import CountryStatModal from '../CountryStatModal';
+import ContinentStatistics from '../ContinentStatistics';
+import CountryStatsModal from '../CountryStatModal';
 
 function SouthAmerica(props) {
   const { southAmerica } = props;
@@ -10,26 +11,34 @@ function SouthAmerica(props) {
   const country = Object.entries(southAmerica.southAmerica).map((
     [key, value],
   ) => (
-
     <div
       key={key}
-      type="button"
+      id={key}
       className="list-group-item list-group-item-action"
     >
       {value}
       <div
         className="float-right"
       >
-        <CountryStatModal id={key} value={value} />
+        <CountryStatsModal id={key} value={value} />
       </div>
     </div>
-
   ));
 
   return (
     <div>
-      <div className="list-group">
-        {country}
+      <div className="row">
+        <div className="col nav continent-header"><h1>South America</h1></div>
+      </div>
+
+      <div className="row">
+        <div className="col main-continent south-america-page" />
+      </div>
+      <ContinentStatistics />
+      <div className="row">
+        <div className="col">
+          <div className="country">{country}</div>
+        </div>
       </div>
     </div>
   );

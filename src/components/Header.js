@@ -1,17 +1,20 @@
 import React from 'react';
+import '../styles/header.scss';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <header className="header">
-      <nav className="navbar navbar-light bg-light">
-        <a href="/" className="navbar-brand">
-          Covid-19 API:
-        </a>
-        <form className="form-inline">
-          <button className="btn btn-outline-success my-2 my-sm-0" type="submit"> Refresh Stats</button>
-        </form>
-      </nav>
-    </header>
+    <div>
+      <div className="header">
+        <div className="row">
+          <nav className="nav">
+            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/about" className="nav-link">About</Link>
+            <Link to="/contact" className="nav-link">contact</Link>
+          </nav>
+        </div>
+      </div>
+    </div>
   );
 }
 
