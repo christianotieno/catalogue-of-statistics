@@ -2,13 +2,16 @@ $mainColor: #d3d3d3;
 $fontColor: #f8fefd;
 
 body {
-  background-color: $mainColor;
+  background-color: #ec4c8a;
   color: $fontColor;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container {
   background-color: #ec4c8a;
+  border: 1px solid $mainColor;
+  border-radius: 25px 25px 0  0;
+  box-shadow: 10px 15px 5px rgba($color: #000, $alpha: 0.3);
 }
 
 .zulu {
@@ -47,5 +50,9 @@ body {
 }
 
 .contact-section {
-  height: 90vh;
+  height: 60vh;
+}
+
+.email {
+  height: 20vh;
 }

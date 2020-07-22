@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getCountry } from '../../actions/index';
-import CountryStatsModal from '../CountryStatModal';
+import CountryStatModal from '../CountryStatModal';
 import GeneralStatistics from '../GeneralStatistics';
 
 function Africa(props) {
@@ -11,7 +11,7 @@ function Africa(props) {
   const country = Object.entries(africa.africa).map((
     [key, value],
   ) => (
-    <div
+    <li
       key={key}
       id={key}
       className="list-group-item list-group-item-action"
@@ -20,9 +20,9 @@ function Africa(props) {
       <div
         className="float-right"
       >
-        <CountryStatsModal id={key} value={value} />
+        <CountryStatModal id={key} value={value} />
       </div>
-    </div>
+    </li>
   ));
 
   return (
@@ -37,7 +37,7 @@ function Africa(props) {
       <GeneralStatistics />
       <div className="row">
         <div className="col">
-          <div className="country">{country}</div>
+          <ul className="country">{country}</ul>
         </div>
       </div>
     </div>

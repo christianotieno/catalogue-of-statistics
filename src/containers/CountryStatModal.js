@@ -18,6 +18,7 @@ function CountryStatModal(props) {
     axios.get(`https://www.trackcorona.live/api/countries/${id}`)
       .then(results => {
         setStats({
+          ...stats,
           country_code: results.data.data[0].country_code,
           confirmed: results.data.data[0].confirmed,
           recovered: results.data.data[0].recovered,

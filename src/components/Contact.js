@@ -53,8 +53,8 @@ function Contact() {
                       alt="linkedin"
                       className="img-fluid social"
                     />
-
                   </a>
+                  <div className="email" />
                 </div>
               </div>
             </div>
