@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getCountry } from '../../actions/index';
-import ContinentStatistics from '../ContinentStatistics';
 import CountryStatsModal from '../CountryStatModal';
+import GeneralStatistics from '../GeneralStatistics';
 
 function NorthAmerica(props) {
   const { northAmerica } = props;
@@ -34,7 +34,7 @@ function NorthAmerica(props) {
       <div className="row">
         <div className="col main-continent north-america-page" />
       </div>
-      <ContinentStatistics />
+      <GeneralStatistics />
       <div className="row">
         <div className="col">
           <div className="country">{country}</div>
