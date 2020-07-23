@@ -1,0 +1,59 @@
+.continent {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 10vh;
+}
+
+.nav {
+  height: 6vh;
+}
+
+.continent:hover {
+  background-color: #abbbb8;
+}
+
+.africa {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(230, 74, 135, 0.73)),
+    url('../assets/img/africa.png');
+}
+
+.asia {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.62), rgba(230, 74, 135, 0.73)),
+    url('../assets/img/asia.png');
+}
+
+.europe {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(230, 74, 135, 0.73)),
+    url('../assets/img/europe.png');
+}
+
+.oceania {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(230, 74, 135, 0.73)),
+    url('../assets/img/oceania.png');
+}
+
+.north {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(230, 74, 135, 0.73)),
+    url('../assets/img/northAmerica.png');
+}
+
+.south {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.32), rgba(230, 74, 135, 0.73)),
+    url('../assets/img/southAmerica.png');
+}
+
+.country {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

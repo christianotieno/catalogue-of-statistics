@@ -1,0 +1,58 @@
+$mainColor: #d3d3d3;
+$fontColor: #f8fefd;
+
+body {
+  background-color: #ec4c8a;
+  color: $fontColor;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+  background-color: #ec4c8a;
+  border: 1px solid $mainColor;
+  border-radius: 25px 25px 0  0;
+  box-shadow: 10px 15px 5px rgba($color: #000, $alpha: 0.3);
+}
+
+.zulu {
+  color: #000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.nav-link {
+  color: $fontColor;
+  font-weight: bolder;
+}
+
+.header-tag {
+  text-align: center;
+}
+
+.about-section,
+.contact-section {
+  border-top: 1px solid $mainColor;
+}
+
+.header-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.social {
+  height: 2.5em;
+}
+
+.contact-section {
+  height: 60vh;
+}
+
+.email {
+  height: 20vh;
+}
