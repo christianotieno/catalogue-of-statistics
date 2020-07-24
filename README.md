@@ -31,6 +31,13 @@ This project's configuration is as simple as possible; build, deploy, and intera
 - Have NodeJS installed locally.
 - Basic to intermediate JavaScript skills.
 
+## 4. Future feature updates/improvements.
+
+- The upcoming updates will consist of:
+1. Ability to check on the country's statistics per city and check total population numbers. 
+2. Functionality to show graphs and the spread of infections and future projections.
+3. A more revamped user interface to filter out results based on the user's search and preferences. 
+
 **Below are the instructions on how to play the game and also setting it up locally.**
 
 ### Build Dependencies 🚧
