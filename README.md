@@ -1,6 +1,6 @@
 # React [Catalogue of Statistics](https://www.notion.so/Catalogue-of-Statistics-72446e7fa33c403a9b6a0bc1de5c6cf5) Capstone Project
 
-> This project is based on a catalogue of statistics
+> This project is based on a catalogue of statistics.
 
 ## APP Screenshot
 
