@@ -10,9 +10,9 @@
 
 ![app-gif](./src/assets/img/readme-docs/app.gif)
 
-## 1. Getting Started: Additional description about the project and its features
+## 1. Getting Started: Additional description of the project and its features
 
-This project is configured to be as simple as possible; build, deploy, and interact with, all with yarn.
+This project's configuration is as simple as possible; build, deploy, and interact with, all with yarn.
 
 ## 2. Built With
 
@@ -35,7 +35,7 @@ This project is configured to be as simple as possible; build, deploy, and inter
 
 ### Build Dependencies 🚧
 
-***The only dependencies are NodeJS & yarn. Any NodeJS LTS version will work. Simply clone this repo and run npm install.***
+***The only dependencies are NodeJS & yarn. Any NodeJS LTS version will work. Clone this repo and run npm install.***
 
 - To get a local copy up and running, follow these simple example steps.
 
@@ -70,7 +70,7 @@ npx eslint .
 ```
 yarn test
 ```
-Launches the test runner in the interactive watch mode.
+The instructions get to launch the test runner in the interactive watch mode.
 
 ### Deployment
 
@@ -78,10 +78,10 @@ Launches the test runner in the interactive watch mode.
 yarn build
 ```
 
-Builds the app for production to the `build` folder.
+The command builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.
+The build's minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
 |  APP NAME | BUILD STATUS: |
@@ -98,7 +98,7 @@ Your app is ready to be deployed!
 
 ## 8. Author Section
 
-👤 **Author**
+👤 **Christian Otieno**
 
 - Github: [christianotieno](https://github.com/christianotieno)
 - Twitter: [@iamchrisotieno](https://twitter.com/iamchrisotieno)
