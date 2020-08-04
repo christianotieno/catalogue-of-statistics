@@ -1,6 +1,16 @@
 # React [Catalogue of Statistics](https://www.notion.so/Catalogue-of-Statistics-72446e7fa33c403a9b6a0bc1de5c6cf5) Capstone Project
 
-> This project is based on a catalogue of statistics.
+> The project is a React capstone based on a catalogue of statistics.
+
+## 1. Getting Started: Additional description of the project and its features
+ 
+The web appllication consists of:
+- A first page with a list of items that could be filtered by some parameters (continents).
+- A second page for the item details.
+- A single page application built with React and Redux
+- Its data getting retrieved from an API and stored in the Redux store.
+- Every page, the main page and pages for each item, having a unique route within the SPA
+- The project's deployed and accessible online.
 
 ## APP Screenshot
 
@@ -9,8 +19,6 @@
 ## User journey
 
 ![app-gif](./src/assets/img/readme-docs/app.gif)
-
-## 1. Getting Started: Additional description of the project and its features
 
 This project's configuration is as simple as possible; build, deploy, and interact with, all with yarn.
 
