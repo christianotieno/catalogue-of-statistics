@@ -63,7 +63,7 @@ git@github.com:christianotieno/react-covid19-catalogue.git
 ### Install dependencies
 
 ```
-yarn add
+yarn install
 ```
 
 ### Run the app in the development mode
