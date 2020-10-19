@@ -1,6 +1,6 @@
 # React [Catalogue of Statistics](https://www.notion.so/Catalogue-of-Statistics-72446e7fa33c403a9b6a0bc1de5c6cf5) Capstone Project
 
-> The project is a React capstone based on a catalogue of statistics.
+A React capstone based for catalogue of statistics.
 
 ## 1. Getting Started: Additional description of the project and its features
  
